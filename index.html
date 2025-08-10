@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Siteul Meu - Exemplu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">SiteulMeu</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Deschide meniul">☰</button>
+      <nav id="nav" class="nav">
+        <a href="#home">Acasă</a>
+        <a href="#about">Despre</a>
+        <a href="#work">Portofoliu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Bun venit!</h1>
+        <p>Acesta este un site demonstrativ, construit cu HTML/CSS/JS. Urcă-l pe GitHub Pages și îl vezi live.</p>
+        <a class="btn" href="#contact">Contactează-mă</a>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>Despre mine</h2>
+      <p>Sunt un dezvoltator începător/intermediar — aici poți prezenta proiectele tale, skill-urile și contactul.</p>
+    </section>
+
+    <section id="work" class="container section grid">
+      <h2>Portofoliu</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Proiect 1</h3>
+          <p>Descriere scurtă.</p>
+        </article>
+        <article class="card">
+          <h3>Proiect 2</h3>
+          <p>Descriere scurtă.</p>
+        </article>
+        <article class="card">
+          <h3>Proiect 3</h3>
+          <p>Descriere scurtă.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <form id="contact-form" class="form">
+        <label>
+          Nume
+          <input type="text" name="name" id="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" id="email" required />
+        </label>
+        <label>
+          Mesaj
+          <textarea name="message" id="message" rows="5" required></textarea>
+        </label>
+        <div class="form-row">
+          <button type="submit" class="btn">Trimite</button>
+          <button type="button" id="clear-btn" class="btn ghost">Curăță</button>
+        </div>
+        <p id="form-status" class="status" aria-live="polite"></p>
+      </form>
+      <div class="saved-messages">
+        <h3>Mesaje salvate (local)</h3>
+        <ul id="messages-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SiteulMeu — Creat de tine</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
